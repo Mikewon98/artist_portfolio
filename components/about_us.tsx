@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AboutUs() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 max-w-5xl mx-auto w-full gap-20 justify-between">
@@ -11,23 +13,26 @@ export default function AboutUs() {
           translating narratives into visually captivating and easily
           comprehensible representations. I thrive on transforming ideas into
           striking visuals that resonate with audiences. Throughout my career,
-          I’ve engaged in a variety of creative projects, including branding
-          initiatives, character development, and social media campaigns. I’ve
-          had the pleasure of collaborating with notable organizations and
-          brands such as PANA Communications and YOT Technologies, where I’ve
-          delivered impactful and visually compelling solutions. My approach is
-          defined by a commitment to excellence, a meticulous eye for detail,
-          and a drive for innovation. I’m dedicated to creating designs that not
-          only meet but exceed expectations, ensuring that every project I
-          undertake is a testament to quality and creativity.
+          I&apos;ve engaged in a variety of creative projects, including
+          branding initiatives, character development, and social media
+          campaigns. I&apos;ve had the pleasure of collaborating with notable
+          organizations and brands such as PANA Communications and YOT
+          Technologies, where I&apos;ve delivered impactful and visually
+          compelling solutions. My approach is defined by a commitment to
+          excellence, a meticulous eye for detail, and a drive for innovation.
+          I&apos;m dedicated to creating designs that not only meet but exceed
+          expectations, ensuring that every project I undertake is a testament
+          to quality and creativity.
         </p>
       </div>
       <div className="mx-8 lg:mx-0">
         <div className="w-full h-full relative rounded-[120px] overflow-hidden ml-auto">
-          <img
+          <Image
             src="/bekama_dawit.jpeg"
             alt="About Us"
             className="object-cover w-full h-full rounded-xl"
+            width={300}
+            height={300}
           />
         </div>
       </div>

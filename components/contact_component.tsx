@@ -1,6 +1,7 @@
-import { SiGmail } from "react-icons/si";
-import { FaPhone } from "react-icons/fa6";
 import { LuInstagram } from "react-icons/lu";
+import { FaPhone } from "react-icons/fa6";
+import { SiGmail } from "react-icons/si";
+import Image from "next/image";
 
 export default function ContactComponent() {
   return (
@@ -18,10 +19,12 @@ export default function ContactComponent() {
           </div>
           <div className="flex items-center gap-4">
             <div className="h-8 w-8 rounded-full bg-purple-200 p-1">
-              <img
+              <Image
                 src="/telegram-logo.webp"
                 alt="Telegram Logo"
                 className="w-full h-full object-cover rounded-full"
+                width={100}
+                height={100}
               />
             </div>
             <p>@buzz_bkm</p>
